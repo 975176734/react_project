@@ -1,0 +1,11 @@
+.goods-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.goods-box:after {
+    content:' ';
+	width: 30%; 
+ }
