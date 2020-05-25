@@ -1,0 +1,25 @@
+.Classification{
+    margin: 0.5rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+.classItem{
+    width: 20%;
+
+}
+.classItem a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.classItem img {
+    width: 100%;
+}

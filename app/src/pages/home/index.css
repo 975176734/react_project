@@ -1,10 +1,13 @@
-.goods-box {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+
+.nav .am-whitespace {
+    height: 0;
 }
-.goods-box::after {
-    content: '';
-    width: 30%;
+.nav .am-tabs-default-bar {
+    height: 3rem;
+}
+
+.nav .am-tabs-default-bar-content {
+    position: fixed;
+    z-index: 999;
+    background-color: white;
 }

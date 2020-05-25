@@ -1,12 +1,37 @@
 .goodsitem-box {
-    width: 30%;
-    height: 200px;
-    border: 1px solid red;
-    margin-top: 20px;
-
+    width: 32%;
+    height: 15rem;
+    margin-top: 0.5rem;
+    text-align: center;
+    background-color: white;
 }
 
 .goodsitem-box img {
-    width: 80px;
-    height: 80px;
+    width: 98%;
+    height: 7rem;
+}
+.goodsitem-box .myprice {
+    color: lightcoral;
+    font-size: 0.8rem;
+    margin: 0.5rem 0;
+}
+.goodsitem-box .title {
+    height: 2.3rem;
+    text-align: start;
+    font-size:1rem;
+    margin: 0.5rem 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.buy{
+    background-color: lightcoral;
+    color: white;
+    border: 0;
+    width: 5.6rem;
+    height: 1.7rem;
+    font-size: 0.3rem;
+    border-radius: 0.3rem;
 }
