@@ -1,0 +1,11 @@
+.goods-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgb(230, 231, 251);
+}
+.goods-box::after {
+    content: '';
+    width: 30%;
+}

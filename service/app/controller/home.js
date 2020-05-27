@@ -30,6 +30,12 @@ class HomeController extends Controller {
     this.ctx.body = data
   }
   
+  async RelatedImages(){
+	  console.log(this.ctx.query,'9999')
+    let data = await this.service.goods.RelatedImages(this.ctx.query);
+    this.ctx.body =data
+  }
+  
 }
 
 module.exports = HomeController;
