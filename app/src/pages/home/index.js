@@ -1,7 +1,7 @@
 import React from "react";
 import GoodsItem from "../../components/GoodsItem";
 import axios from "axios";
-
+import ClassifyItems from "../../components/ClassifyItems";
 import store from "../../store/store";
 
 import "./index.css";
@@ -33,10 +33,17 @@ class HomePage extends React.Component {
         store.dispatch({type: "HIDDEN"})
     }
 
+    handleTitle(text) {
+        console.log(text)
+    }
+    
     render() {
+        console.log(this.props)
         return (
             <div>
                 <h2>主页</h2>
+                {/* <ClassifyItems  xxx={this.handleTitle.bind(this)}/> */}
+                <ClassifyItems myprops={this.props}/>
                 <div className="goods-box">
                    {
                        this.state.goodsList.map((item, index) => {
