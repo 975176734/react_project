@@ -1,9 +1,14 @@
+.mybag {
+    background-color: white;
+}
 .goods-box {
     width: 100%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: rgb(230, 231, 251);
+    background-color: #f5f5f5f5;
+    margin-bottom: 4rem;
+    padding-top: 1rem;
 }
 .goods-box::after {
     content: '';

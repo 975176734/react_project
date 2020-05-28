@@ -9,7 +9,7 @@ module.exports = app => {
   router.post('/login', controller.home.login);//登录
   router.get('/search', controller.search.search);//请求搜索数据
   router.get('/goods', controller.home.goods);//请求商品数据
-  router.get('/SimilarImg', controller.home.SimilarImg);//请求图片
+  router.get('/GoodsDetail', controller.home.GoodsDetail);//根据商品id请求商品信息
   router.get('/RelatedImages', controller.home.RelatedImages);//根据类型请求图片
   router.get('/AddToCar', controller.addtocar.addtocar);//加入购物车
   router.get('/GetCar', controller.getcar.getcar);//获取购物车中的数据

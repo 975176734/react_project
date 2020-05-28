@@ -6,7 +6,7 @@ class UserService extends Service {
     const data = await this.app.mysql.query(sql);
     return data;
   }
-  async  SimilarImg(paramObj) {
+  async  GoodsDetail(paramObj) {
     const sql=`select * from picture where id = "${paramObj.id}"`
     const data = await this.app.mysql.query(sql);
     return data;

@@ -5,7 +5,8 @@ import ShopcarPage from "../pages/shopcar";
 import MinePage from "../pages/mine";
 import LoginPage from "../pages/login";
 import GoodsDetail from "../components/GoodsDetail";
-import myGoodsItemShow from "../components/myGoodsItemShow"
+import myGoodsItemShow from '../components/myGoodsItemShow'
+
 const router = [
     {
         path: "/",
@@ -47,8 +48,9 @@ const router = [
     {
         path:"/myGoodsItemShow",
         component:myGoodsItemShow,
-        title:"导航菜单跳转"
+        title:"图片类型跳转"
     }
+    
 ]
 
 export default router;

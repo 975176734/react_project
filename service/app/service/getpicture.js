@@ -5,8 +5,8 @@ class UserService extends Service {
     const data = await this.app.mysql.query(sql)
     return data
   }
-  async getpictures() {
-    let sql = `select * from picture order by price DESC`
+  async getpictures(obj) {
+    let sql = `select * from picture order by price ${obj.str}`
     const data = await this.app.mysql.query(sql)
     return data
   }

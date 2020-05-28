@@ -16,6 +16,7 @@ class GoodsItem extends React.Component {
                     <Carousel
                         autoplay={true}
                         infinite
+                        autoplayInterval='1000'
                         // beforeChange={this.before.bind(this)}
                         // afterChange={index => console.log('slide to', index)}
                     >

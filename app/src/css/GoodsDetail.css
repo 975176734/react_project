@@ -1,0 +1,107 @@
+.GoodsDetail {
+    background-color: white;
+}
+.back {
+    width: 2rem;
+    height: 2rem;
+    line-height: 2.7rem;
+    border-radius: 1rem;
+    background-color: gray;
+    color: white;
+    font-size: 0.6rem;
+    text-align: center;
+}
+.detailBox {
+    position: relative;
+    font-size: 1.2rem;
+}
+.detailBox .back {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+.goodsbox img{
+    height: 22rem;
+    width: 100%;
+}
+.goodsbox p:nth-of-type(1){
+    font-size: 1.6rem;
+    color: #ff6700;
+}
+.goodsbox p:nth-of-type(3){
+    font-size: 1rem;
+}
+.addCar {
+   position: relative;
+   bottom: 1.2rem;
+   width: 9rem;
+   height: 2.2rem;
+   border-radius: 2.2rem;
+   color: white;
+   background-image: -webkit-linear-gradient(left, #FFC500, #FF9402);
+   border: 0;
+   right: -13rem;
+}
+
+.bag{
+       
+    background-color: #f2f2f2;
+}
+
+.recommend {
+    color: gray;
+    font-size: 1rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    margin: 1rem 0;
+
+}
+
+.relatedImg {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+.item_box {
+    width: 47%;
+    margin-bottom: 0.4rem;
+    background-color: white;
+    
+}
+.item_box img {
+    width: 100%;
+    height: 10rem;
+    border-radius:1rem ;
+}
+.item_box .myprice2 {
+    color: lightcoral;
+    font-size: 0.8rem;
+    margin: 0.5rem 0;
+    margin-left: 0.6rem;
+    
+}
+.item_box .title2 {
+    height: 2.3rem;
+    text-align: start;
+    font-size:1rem;
+    margin: 0.5rem 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.buy2{
+    background-color: lightcoral;
+    color: white;
+    border: 0;
+    width: 5.6rem;
+    height: 1.7rem;
+    font-size: 0.3rem;
+    border-radius: 0.4rem;
+    margin-bottom: 0.8rem;
+    margin-left: 0.6rem;
+    
+}

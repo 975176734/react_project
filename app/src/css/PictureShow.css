@@ -1,0 +1,51 @@
+.mylogo {
+    width: 100%;
+    height: 3rem;
+    margin-top: 1rem ;
+}
+.PictureShow {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+}
+.PictureShow .goodsitem {
+    width: 48%;
+    margin-bottom: 0.4rem;
+    background-color:white ;
+    padding-bottom: 0.8rem;
+    text-align: center;
+}
+.PictureShow .goodsitem::after{
+    content: '';
+    width: 48%;
+}
+.PictureShow .goodsitem img {
+    width: 100%;
+    height: 8rem;
+}
+.PictureShow .goodsitem .title1{
+    height: 2.3rem;
+    text-align: start;
+    font-size:1rem;
+    margin: 0.5rem 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+ .myprice1 {
+    color: lightcoral;
+    font-size: 0.8rem;
+    margin: 0.5rem 0;
+}
+.buy1{
+    background-color: lightcoral;
+    color: white;
+    border: 0;
+    width: 7rem;
+    height: 1.6rem;
+    font-size: 0.3rem;
+    border-radius: 0.3rem;
+}

@@ -20,8 +20,8 @@ class HomeController extends Controller {
     this.ctx.body = data
 	
   }
-  async SimilarImg() {
-    var data = await this.service.goods.SimilarImg(this.ctx.query);
+  async GoodsDetail() {
+    var data = await this.service.goods.GoodsDetail(this.ctx.query);
     this.ctx.body = data
   }
 
@@ -31,7 +31,6 @@ class HomeController extends Controller {
   }
   
   async RelatedImages(){
-	  console.log(this.ctx.query,'9999')
     let data = await this.service.goods.RelatedImages(this.ctx.query);
     this.ctx.body =data
   }

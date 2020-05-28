@@ -6,10 +6,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
     
+    
 }
 .detail_items{
     width: 100%;
     height: 80%;
+    margin-bottom: 1.6rem;
+    
 
 }
 .detail_items img{
@@ -20,5 +23,16 @@
 .detail_items p{
     width: 100%;
     height: 40%;
+    padding-left: 1rem;
     
+}
+.buy3{
+    margin:0 0 0 70%;
+    background-color: lightcoral;
+    color: white;
+    border: 0;
+    width: 5.6rem;
+    height: 1.7rem;
+    font-size: 0.3rem;
+    border-radius: 0.3rem;
 }

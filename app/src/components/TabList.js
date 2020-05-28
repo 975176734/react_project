@@ -3,7 +3,6 @@ import { TabBar } from 'antd-mobile';
 
 import "../css/TabList.css";
 
-
 import store from "../store/store";
 
 
@@ -16,6 +15,7 @@ class TabList extends React.Component {
 
     render() {
         return (
+            <div className='tablist-box'>
             <div className="tablist">
                 <TabBar
                     unselectedTintColor="#949494"
@@ -133,6 +133,7 @@ class TabList extends React.Component {
                     >
                     </TabBar.Item>
                 </TabBar>
+            </div>
             </div>
         )
     }

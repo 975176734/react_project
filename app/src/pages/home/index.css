@@ -1,4 +1,6 @@
-
+.am-tabs-default-bar-underline {
+    border: 0;
+}
 .nav .am-whitespace {
     height: 0;
 }

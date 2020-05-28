@@ -1,0 +1,76 @@
+.BaseLink h2 {
+    text-align: center;
+}
+.callme {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.callme .call-box {
+    width: 23%;
+    padding:0 0.6rem;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-left: 0.2rem dotted #d3d3d3;
+}
+.callme .call-box:nth-of-type(1){
+    border-left: 0;
+}
+.callme .call-box img {
+    width: 2rem;
+    height: 2rem;
+}
+.index__copybottom {
+    display: flex;
+    justify-content: space-around;
+}
+.index__left {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 0.6rem;
+    box-sizing: content-box;
+    padding:0 0 2rem;
+}
+.index__left div:nth-of-type(1) {
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+.index__left div:nth-of-type(2) {
+   margin: 0.4rem 0;
+}
+
+.index__left div:nth-of-type(3) {
+    color: tomato;
+    font-size: 0.8rem;
+    font-weight: bolder;
+ }
+ .index__right {
+     width: 60%;
+     display: flex;
+     flex-wrap: nowrap;
+     justify-content: space-around;
+ }
+ .index_item {
+     width: 21%;
+ }
+ .itemSmall {
+     display: flex;
+     flex-direction: column;
+     font-size: 0.1rem;
+     color: grey;
+ }
+ .itemSmall div{
+     margin: 0.2rem 0;
+ }
+ .foot {
+     margin: 1rem 0;
+     text-align: center;
+     color: #108ee9;
+     font-size: 0.8rem;
+ }

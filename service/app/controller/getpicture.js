@@ -8,7 +8,7 @@ class GetPicturehController extends Controller {
     this.ctx.body = data
   }
   async getpictures() {
-    var data = await this.service.getpicture.getpictures();
+    var data = await this.service.getpicture.getpictures(this.ctx.query);
     this.ctx.body = data
   }
 }

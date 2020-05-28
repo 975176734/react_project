@@ -1,6 +1,10 @@
 import React from "react";
-
+import getparams from "../../assets/utils/getparams";
 class VideoPage extends React.Component {
+    componentDidMount(){
+        let types = getparams(this.props.location.search).search.types
+        console.log(types)
+    }
     render(){
         return(
             <div>视频</div>
