@@ -11,7 +11,7 @@ export default function AuthRoute({ component:Component, ...rest }) {
             ) : (
                 <Redirect
                     to={{
-                        pathname: "/login",
+                        pathname: "/mylogin",
                         state: { from: props.location }
                     }}
                 />

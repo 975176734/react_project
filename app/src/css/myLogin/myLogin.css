@@ -1,0 +1,47 @@
+.LoginPage{
+    position: absolute;
+    top: 0;
+   left: 0;
+   width: 100%;
+   min-height: 100%;
+   height: auto;
+    background-color: #fff;
+}
+.login-body{
+    position: relative;
+    top: 50px;
+}
+.Logo img{
+    width: 75px;
+    height: 75px;
+    position: relative;
+    left: 50%;
+    top: 25px;
+    margin-left: -32.5px;
+}
+.password-isview{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 55px;
+    right: 0;
+}
+.login-title{
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    padding: 20px;
+    top: 20px;
+}
+.login-btn{
+    position: relative;
+    top: 100px;
+    width: 90%;
+    margin: 0 auto;
+}
+.reg-btn{
+    position: relative;
+    top: 120px;
+    width: 90%;
+    margin: 0 auto;
+}

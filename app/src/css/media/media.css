@@ -1,0 +1,52 @@
+html:not([data-scale]) .am-list-body div:not(:last-child) .am-list-line::after{
+    display: none;
+}
+.my-drawer {
+    position: relative;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .my-drawer .am-drawer-sidebar {
+    background-color: #FAFAFA;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .am-navbar-dark{
+    background-color: #F2F2F2;
+  }
+  .am-navbar-title{
+      color: #666666;
+  }
+  .am-icon-left{
+      color: #666666;
+  }
+  .selected {
+      color: #fb7d34;
+      font-size: 20px;
+  }
+  li{
+      width: 85px;
+      list-style: none;
+      text-align: center;
+      font-size: 13px;
+      padding: 10px;
+  }
+  .am-drawer-sidebar::-webkit-scrollbar{
+      display: none;
+  }
+  .category_title {
+    color: #3c3c3c;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+    .category_item{
+        margin-bottom: 20px;
+}
+.category_item_name{
+    width: 250px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    color: #3c3c3c;
+    margin-bottom: 5px;
+}

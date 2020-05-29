@@ -89,10 +89,10 @@ class TabList extends React.Component {
 					        />
 					    }
 					    title="视频"
-					    key="video"
-					    selected={this.props.history.location.pathname === '/video'}
+					    key="media"
+					    selected={this.props.history.location.pathname === '/media'}
 					    onPress={() => {
-					        this.props.history.push("/video");
+					        this.props.history.push("/media");
 					    }}
 					>
 					</TabBar.Item>

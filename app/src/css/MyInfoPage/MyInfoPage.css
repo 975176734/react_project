@@ -1,0 +1,38 @@
+.MyInfoPage{
+    position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   min-height: 100%;
+   height: auto;
+   background-color: #F5F5F5;
+   color: #505050;
+}
+.MyInfoPage-body{
+    background-color: #ffff;
+   font-size: 14px;
+   border-top: 10px solid  #F5F5F5;
+}
+.MyInfoPage-list{
+    padding:15px;
+    height: 20px;
+    line-height: 20px;
+    border-bottom: 1.5px solid #F5F5F5;
+}
+.body-left{
+    float: left;
+}
+.body-right{
+    float: right;
+    color: #999999;
+}
+.body-center{
+    text-align: center;
+}
+.lastList{
+    border-bottom: 15px solid #F5F5F5;
+}
+.myinfo-submit{
+    width: 90%;
+    margin: 30px auto 0;
+}

@@ -1,0 +1,17 @@
+.ChangePassword{
+    position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   min-height: 100%;
+   height: auto;
+   background-color: #F2F2F2;
+}
+.ChangePassword-body{
+   text-align: center;
+   padding-top: 40px;
+   font-size: 16px;
+}
+.ChangePassword-submit{
+   margin-top: 50px;
+}

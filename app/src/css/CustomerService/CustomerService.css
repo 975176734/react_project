@@ -1,0 +1,17 @@
+.CustomerService{
+    position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   min-height: 100%;
+   height: auto;
+   background-color: #F2F2F2;
+}
+.CustomerService-body{
+   text-align: center;
+   font-size: 16px;
+}
+.human-title{
+    margin: 50px 0;
+    color: black;
+}

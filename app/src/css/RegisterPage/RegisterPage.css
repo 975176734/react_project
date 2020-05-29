@@ -1,0 +1,33 @@
+.RegisterPage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    height: auto;
+    width: 100%;
+    background-color: #fff;
+}
+.Register-logo img{
+    position: relative;
+    top:30px;
+    left: 50%;
+    margin-left: -32.5px;
+    width: 75px;
+    height: 75px;
+}
+.Register-title{
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+.Register-body{
+    position: relative;
+    top: 50px;
+}
+.Register-submit{
+    width: 90%;
+    margin: 20px auto 0;
+}
+.am-navbar-left{
+    color: #666666;
+}

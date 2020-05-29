@@ -21,4 +21,8 @@ module.exports = app => {
   router.get('/getimg', controller.getimg.getimg);//得到图片
   router.get('/getpicture', controller.getpicture.getpicture);//得到所有图片。升序排列
   router.get('/getpictures', controller.getpicture.getpictures);//得到所有图片。降序排列
+  router.get('/SearchMedia', controller.video.SearchMedia);//搜索视频
+  router.post('/change',controller.change.changePassword);//改变密码
+  router.post('/addInfo',controller.change.addInfo);//添加用户信息
+  router.get('/getinfo',controller.change.getinfo);//添加用户信息
 };

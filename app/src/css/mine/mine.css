@@ -1,0 +1,76 @@
+.mine-center{
+    background-color: #FFFFFF;
+    height: 100%;
+}
+.mine-header{
+   background: url("http://d100.paixin.com/1268628/4018/i/380/depositphotos_40189775-stock-photo-yellow-abstract-background.jpg");
+   background-position: inherit;
+   background-repeat: no-repeat;
+   background-size:100%;
+   height: 83px;
+   color: white;
+   text-align: center;
+   line-height: 83px;
+   font-size: 25px;
+   position: relative;
+}
+.mineImg{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 55px;
+    top: 18px;
+}
+.toMycar{
+    padding: 15px;
+    height: 20px;
+    line-height: 20px;
+    border-bottom: 1px solid rgba(0,0,0,.15);
+}
+.mycar-left{
+    float: left;
+}
+.mycar-right{
+    float: right;
+}
+.icon-right{
+    float: right;
+}
+.Mycar-body{
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.Mycar-body-item{
+    font-size: 13px;
+}
+.Mycar-body-item img {
+    width: 25px;
+    height: 25px;
+}
+.ui-line {
+    height: 10px;
+    background: #f5f5f5;
+    overflow: hidden;
+    clear: both;
+}
+.mine-list{
+    position: relative;
+    height: 50px;
+    padding: 10px 10px;
+    border-bottom: 2px solid #F5F5F5;
+}
+.mine-list-img{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 24px;
+    left: 15px;
+}
+.mine-list-right{
+    display: inline-block;
+    width: 85%;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+}
