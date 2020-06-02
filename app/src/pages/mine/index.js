@@ -36,6 +36,15 @@ class MinePage extends React.Component {
             store.dispatch({ type: "HIDDEN" })
         }
     }
+    toCar(){
+        if (store.getState().isLogin) {
+            this.props.history.push("/shopcar")
+            store.dispatch({ type: "HIDDEN" })
+        }else{
+            this.props.history.push("/mylogin")
+            store.dispatch({ type: "HIDDEN" })
+        }
+    }
     toChange() {
         if (store.getState().isLogin) {
             this.props.history.push("/change")
@@ -60,7 +69,7 @@ class MinePage extends React.Component {
                     <img src={mineUrl} className="mineImg"></img>
                     个人中心
                 </div>
-                <div className="toMycar">
+                <div className="toMycar" onClick={this.toCar.bind(this)}>
                     <span className="mycar-left">我的订单</span>
                     <div>
                         <Icon className="icon-right" type="right" />
