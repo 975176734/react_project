@@ -41,9 +41,9 @@ decrease(price){
 //删除购物车某一项
 delete_one(id,price,num,index){
     if(this.state.my_len>0){
-        
+        this.props.pfn(-price*num)
         Axios.get(`http://localhost:7001/RemoveItem?itemID=${id}&userName=${localStorage.name}`).then(()=>{
-            this.props.pfn(-price*num)
+            
             this.setState({
                 // isDel:false,
                 my_len:this.state.my_len-=1
