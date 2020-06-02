@@ -17,7 +17,7 @@ class LoginPage extends React.Component {
         password: "",
     }
     changView() {
-        if (this.state.view == false) {
+        if (this.state.view === false) {
             this.setState({
                 view: true,
                 type: "text"
@@ -30,16 +30,16 @@ class LoginPage extends React.Component {
         }
     }
     login() {
-        if (this.props.form.getFieldsValue().name.length == 0) {
+        if (this.props.form.getFieldsValue().name.length === 0) {
             Toast.fail('用户名不能为空', 1);
-        } else if (this.props.form.getFieldsValue().password.length == 0) {
+        } else if (this.props.form.getFieldsValue().password.length === 0) {
             Toast.fail('密码不能为空', 1);
         } else {
             axios.post(`http://127.0.0.1:7001/login`, { name: `${this.props.form.getFieldsValue().name}`, password: `${this.props.form.getFieldsValue().password}` })
                 .then(res=>{
-                    if(res.data.code==4004){
+                    if(res.data.code===4004){
                         Toast.fail(res.data.info, 2);
-                    }else if(res.data.code==2000){
+                    }else if(res.data.code===2000){
                         Toast.success(res.data.info, 2,()=>{
                             this.props.history.go(-1)
                             store.dispatch({type: "SHOW"})

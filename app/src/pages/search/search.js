@@ -11,7 +11,6 @@ class SearchBarExample extends React.Component {
     this.autoFocusInst.focus();
   }
   onChange= (value) => {
-      console.log(value)
     this.setState({ myvalue:value });
   };
   clear = () => {

@@ -31,7 +31,6 @@ class MyInfoPage extends React.Component {
         axios.get(`http://127.0.0.1:7001/getinfo?name=${localStorage.name}`)
             .then(res => {
                 if (res.data.length!=0) {
-                    console.log(res.data)
                     let date = res.data[0].date.split("T")[0]
                     this.setState({
                         name: res.data[0].name,

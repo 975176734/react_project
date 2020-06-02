@@ -19,7 +19,7 @@ class MediaPage extends React.Component {
         this.setState({
             selected: num
         });
-        if (item == "推荐") {
+        if (item === "推荐") {
             Axios.get(`http://127.0.0.1:7001/getMedia`)
                 .then(res => {
                     this.setState({

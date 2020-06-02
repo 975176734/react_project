@@ -25,19 +25,19 @@ class RegisterPage extends React.Component {
             {
                 text: 'Ok', onPress: () => {
                     if ((!this.state.hasError1) && (!this.state.hasError2) && (!this.state.hasError3)) {
-                        if (this.state.value1.length == 0) {
+                        if (this.state.value1.length === 0) {
                             Toast.fail('请输入用户名', 2);
                             this.setState({
                                 hasError1: true,
                             })
                         } 
                         else {
-                            if (this.state.value2 == this.state.value3) {
+                            if (this.state.value2 === this.state.value3) {
                                 axios.post(`http://127.0.0.1:7001/Register`, { name: `${this.state.value1}`, password: `${this.state.value2}` })
                                     .then(res => {
-                                        if (res.data.code == 4002) {
+                                        if (res.data.code === 4002) {
                                             Toast.fail(res.data.info, 2);
-                                        } else if (res.data.code = 2000) {
+                                        } else if (res.data.code === 2000) {
                                             localStorage.name = this.state.value1;
                                             Toast.success(res.data.info, 2, () => {
                                                 this.props.history.push("/addinfo")

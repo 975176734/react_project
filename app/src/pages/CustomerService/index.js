@@ -15,14 +15,13 @@ class CustomerService extends React.Component {
     }
     //提交数据
     mysubmit() {
-        if(this.props.form.getFieldsValue().title.length==0){
+        if(this.props.form.getFieldsValue().title.length===0){
             Toast.fail('请输入标题', 1);
         }
-        if(this.props.form.getFieldsValue().opinion.length==0){
+        if(this.props.form.getFieldsValue().opinion.length===0){
             Toast.fail('请输入内容', 1);
         }
         else{
-            console.log(this.props.form.getFieldsValue())
             this.props.form.resetFields()
             Toast.success('感谢您的反馈，我们会尽快给您答复', 2);
         }

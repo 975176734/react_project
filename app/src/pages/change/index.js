@@ -25,7 +25,7 @@ class ChangePassword extends React.Component {
             {
                 text: 'Ok', onPress: () => {
                     if ((!this.state.hasError1) && (!this.state.hasError2) && (!this.state.hasError3)) {
-                        if (this.state.value1.length == 0 || (this.state.value2.length == 0) || (this.state.value2.length == 0)) {
+                        if (this.state.value1.length === 0 || (this.state.value2.length === 0) || (this.state.value2.length === 0)) {
                             Toast.fail('输入有误', 2);
                             this.setState({
                                 hasError1: true,
@@ -33,7 +33,7 @@ class ChangePassword extends React.Component {
                                 hasError3: true
                             })
                         } else {
-                            if (this.state.value1 == this.state.value2) {
+                            if (this.state.value1 === this.state.value2) {
                                 Toast.fail('新密码不能和原密码一样', 2);
                                 this.setState({
                                     hasError1: true,
@@ -41,7 +41,7 @@ class ChangePassword extends React.Component {
                                     hasError3: true
                                 })
                             } else {
-                                if (this.state.value2 == this.state.value3) {
+                                if (this.state.value2 === this.state.value3) {
                                     axios.post(`http://127.0.0.1:7001/change`, { userName: `${localStorage.name}`, password: `${this.state.value2}` })
                                     .then(res=>{
                                        Toast.success("修改成功", 2)
