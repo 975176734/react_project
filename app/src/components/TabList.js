@@ -118,6 +118,8 @@ class TabList extends React.Component {
                         selected={this.props.history.location.pathname === '/shopcar'}
                         onPress={() => {
                             this.props.history.push("/shopcar");
+                            //点击购物车隐藏tabvar
+                            store.getState().isHidden=true;
                         }}
                     >
                     </TabBar.Item>

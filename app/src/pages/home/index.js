@@ -5,6 +5,7 @@ import Scenery from './Scenery'
 import Food from './Food'
 import Common from './Common'
 import { Tabs, WhiteSpace } from 'antd-mobile';
+
 //首页
 class HomePage extends React.Component {
 
@@ -45,6 +46,7 @@ class HomePage extends React.Component {
             < div>
         
                 <div className='nav'>
+                    
                     <WhiteSpace />
                     <Tabs tabBarUnderlineStyle={this.state.boder} tabBarActiveTextColor='#ed5b00' onTabClick={() => { console.log() }} tabs={this.tabs} renderTabBar={props => <Tabs.DefaultTabBar {...props} page={5} />}>
                         {this.renderContent}

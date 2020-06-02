@@ -5,6 +5,7 @@ import store from "../../store/store";
 import "./Recommended.css";
 import Lunbo from "../../components/Lunbo";
 import Classification from "../../components/Classification";
+import Search from "../../components/Search";
 //首页
 class Recommended extends React.Component {
 
@@ -59,6 +60,7 @@ class Recommended extends React.Component {
     render() {
         return (
             < div className='mybag'>
+                <Search/>
                 <Lunbo mydata={this.Slideshow} />
                 <Classification ClassifiData={this.ClassifiData} goclassifiPage={this.goclassifiPage.bind(this)} />
                 <Classification ClassifiData={this.ClassifiData2} goclassifiPage={this.goclassifiPage.bind(this)} />

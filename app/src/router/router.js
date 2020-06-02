@@ -12,6 +12,7 @@ import ChangePassword from "../pages/change";
 import CustomerService from "../pages/CustomerService"
 import RegisterPage from "../pages/register/register";
 import AddInfoPage from "../pages/AddInfoPage"
+import toSearch from "../pages/search/search"
 const router = [
     {
         path: "/",
@@ -84,6 +85,11 @@ const router = [
         path:"/addinfo",
         component: AddInfoPage,
         title: "添加个人信息"
+    },
+    {
+        path:"/toSearch",
+        component:toSearch,
+        title:"搜素页"
     }
     
 ]

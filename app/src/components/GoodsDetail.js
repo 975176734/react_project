@@ -48,8 +48,27 @@ class GoodsDetail extends React.Component {
             goodsdetail:obj
         })
     }
+    //加入购物车按钮
     addCar(param){
-        console.log('点击添加到购物车,此为商品id=',param)
+        // console.log('点击添加到购物车,此为商品id=',param)
+        console.log(store.getState().isLogin)
+        if(store.getState().isLogin){
+            //已经登录
+            let myinfo = {username:localStorage.username,itemID:param}
+            axios.get(`http://localhost:7001/AddToCar?userName=${localStorage.name}&itemID=${param}`).then(
+                (res)=>{
+                    console.log(res)
+                    alert(res.data.info)
+                }
+            ).catch(
+                (err)=>{
+                    console.log(err)
+                    alert(err)
+            })
+        }else{
+            alert("请登录")
+        }
+        
     }
     render() {
         return (

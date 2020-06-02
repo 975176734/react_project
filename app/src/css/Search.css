@@ -1,0 +1,21 @@
+.mybox666{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    border:1px solid grey;
+    border-radius:50rem;
+    margin-bottom:3px;
+   
+}
+.mybox666 span img{
+    width: 13%;
+    height: 100%;
+}
+
+.mybox666 div{
+    width: 60%;
+    height: 100%;
+    display: inline-block;
+    position:relative;
+    top:-18px;
+}
